@@ -1,0 +1,4 @@
+Currently, the OAuth2Client sends POST parameters as multipart/form-data. This doesn't work with some OAuth2 servers like
+LinkedIn, which only supports application/x-www-form-urlencoded for POST parameters when getting accessToken.
+
+My fork allows user to configure the client using content type for POST.
